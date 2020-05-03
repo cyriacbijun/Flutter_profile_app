@@ -28,12 +28,63 @@ class MyProfile extends StatelessWidget {
               ),
             ),
             Text(
-              'DATA SCIENTIST',
+              'DEVELOPER',
               style: TextStyle(
                 color: Colors.teal[100],
-                fontSize: 30.0,
+                fontSize: 20.0,
                 fontFamily: 'SourceSansPro',
+                fontWeight: FontWeight.w500,
                 letterSpacing: 2.5,
+              ),
+            ),
+            Container(
+              color: Colors.teal[50],
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 50.0),
+              padding: EdgeInsets.all(10.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.phone,
+                    color: Colors.teal[900],
+                  ),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Text(
+                    '+91 8078460133',
+                    style: TextStyle(
+                      color: Colors.teal[900],
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 17.0,
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              color: Colors.teal[50],
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 50.0),
+              padding: EdgeInsets.all(10.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(
+                    Icons.email,
+                    color: Colors.teal[900],
+                  ),
+                  SizedBox(
+                    width: 10.0,
+                  ),
+                  Text(
+                    'cyriacbijun@gmail.com',
+                    style: TextStyle(
+                      color: Colors.teal[900],
+                      fontFamily: 'SourceSansPro',
+                      fontSize: 17.0,
+                    ),
+                  )
+                ],
               ),
             )
           ],
