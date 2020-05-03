@@ -10,7 +10,7 @@ class MyProfile extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.teal[600],
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -37,8 +37,17 @@ class MyProfile extends StatelessWidget {
                 letterSpacing: 2.5,
               ),
             ),
+            SizedBox(
+              width: 150.0,
+              height: 20.0,
+              child: Divider(
+                color: Colors.teal[800],
+                thickness: 5.0,
+              ),
+            ),
             Card(
               color: Colors.teal[50],
+              elevation: 10.0,
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 50.0),
               child: ListTile(
                 leading: Icon(
@@ -57,6 +66,7 @@ class MyProfile extends StatelessWidget {
             ),
             Card(
               color: Colors.teal[50],
+              elevation: 10.0,
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 50.0),
               child: ListTile(
                 leading: Icon(
